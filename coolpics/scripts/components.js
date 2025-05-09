@@ -1,13 +1,13 @@
 // Load header and footer for each page.
 document.getElementById("header").innerHTML = 
-    fetch("../pages/components/header.html")
+    fetch("pages/components/header.html")
         .then(response => response.text())
         .then(html => {
             document.getElementById("header").innerHTML = html
         });
 
 document.getElementById("footer").innerHTML = 
-    fetch("../pages/components/footer.html")
+    fetch("pages/components/footer.html")
         .then(response => response.text())
         .then(html => {
             document.getElementById("footer").innerHTML = html
@@ -17,7 +17,7 @@ document.getElementById("footer").innerHTML =
 const numPhotos = 9;
 let photoGallery = document.getElementById("gallery");
 
-fetch("../pages/components/figure.html")
+fetch("pages/components/figure.html")
     .then(response => response.text())
     .then(html => {
         let content = "";
