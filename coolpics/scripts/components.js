@@ -1,27 +1,26 @@
 // Load header for each page.
-document.getElementById("header").innerHTML = 
-    fetch("pages/components/header.html")
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById("header").innerHTML = html
+fetch("pages/components/header.html")
+    .then(response => response.text())
+    .then(html => {
+        document.getElementById("header").innerHTML = html
 
-            const menuButton = document.querySelector('.menu-button');
-            const menu = document.querySelector('.menu');
+        const menuButton = document.querySelector('.menu-button');
+        const menu = document.querySelector('.menu');
 
-            function handleResize() {
-                if (window.innerWidth > 1000) {
-                    menu.classList.remove('hide');
-                } else {
-                    menu.classList.add('hide');
-                }
+        function handleResize() {
+            if (window.innerWidth > 1000) {
+                menu.classList.remove('hide');
+            } else {
+                menu.classList.add('hide');
             }
+        }
 
-            menuButton.addEventListener('click', function() {
-                menu.classList.toggle('hide');
-            });
-
-            window.addEventListener('resize', handleResize);
+        menuButton.addEventListener('click', function() {
+            menu.classList.toggle('hide');
         });
+
+        window.addEventListener('resize', handleResize);
+    });
 
 // For loop that dynamically generates the photos.
 const numPhotos = 9;
@@ -39,9 +38,8 @@ for (let i = 0; i < numPhotos; i++) {
 photoGallery.innerHTML = content;
 
 // Load footer for each page.
-document.getElementById("footer").innerHTML = 
-    fetch("pages/components/footer.html")
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById("footer").innerHTML = html
-        });
+fetch("pages/components/footer.html")
+    .then(response => response.text())
+    .then(html => {
+        document.getElementById("footer").innerHTML = html
+    });
