@@ -1,0 +1,129 @@
+input {
+    height: 32px;
+    font-size: 16px;
+}
+
+button {
+    z-index: 2;
+    position: absolute;
+    bottom: -120px;
+    right: 0px;
+    padding: 8px 16px;
+    width: 100px;
+    display: inline-block;
+    border: #000 solid 2px;
+    border-radius: 4px;
+}
+
+.form-container {
+    display: grid;
+    position: relative;
+    width: 520px;
+    margin: 2rem auto;
+}
+
+.card {
+    width: 400px;
+    height: 240px;
+    background-color: var(--card-color);
+    grid-area: 1 / 1;
+    border-radius: 20px;
+    padding: 12px 0px;
+}
+
+.card-back {
+    z-index: 0;
+    top: 0;
+    left: 0;
+    transform: translate(120px, 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-back-top {
+    background-color: #000;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.card-back-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.cvv-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-back-bottom input {
+    width: 60px;
+}
+
+.card-front {
+    box-shadow: 3px 3px 5px #999;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 32px;
+}
+
+.card-top p {
+    font-size: 20px;
+}
+
+.card-middle {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 32px;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 32px;
+}
+
+.holder-container {
+    width: 160px;
+}
+
+.holder-container input {
+    width: 160px;
+}
+
+.exp-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.exp-date {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.date-input {
+    width: 42px;
+}
+
+label, p {
+    font-family: var(--card-font);
+}
+
+label {
+    font-size: 20px;
+}
