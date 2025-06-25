@@ -54,17 +54,34 @@ main {
     padding: 0;
 }
 
+.find-recipe {
+    flex: 1;
+}
+
 .find-recipe input {
     border: none;
     font-size: 16px;
     width: 100%;
+    box-sizing: border-box;
     padding: 8px;
+}
+
+.find-recipe input:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
 }
 
 .search-icon {
     border-left: solid 1px #808080;
-    padding: 7px 8px 7px 8px;
+    padding: 6px 8px 6px 8px;
     align-content: center;
+}
+
+.search-icon button {
+    border: none;
+    background: none;
+    cursor: pointer;
 }
 
 .search-icon img {
@@ -75,6 +92,13 @@ main {
     border-bottom: #808080 1px solid;
     width: 100%;
     margin: 16px 0px;
+}
+
+.recipe-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
 }
 
 .recipe-card {
@@ -93,18 +117,32 @@ main {
 }
 
 .type {
-    border: #000 1px solid;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 32px;
+}
+
+.type li {
+    list-style-type: none;
+    font-family: var(--primary-font);
+    border: #000 2px solid;
     display: inline-block;
     font-weight: bold;
     font-size: 20px;
     padding: 8px 16px;
-    margin: 0;
-    margin-bottom: 32px;
+    margin: 4px;
 }
 
 .recipe-card h2 {
     color: var(--primary-color);
     font-size: 32px;
+    text-decoration: none;
+}
+
+.recipe-card a {
+    color: var(--primary-color);
+    font-size: 32px;
+    text-decoration: none;
 }
 
 .stars span {

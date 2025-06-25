@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Patrick+Hand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="recipes.css">
     <script src="recipes.mjs" type="module" defer></script>
-    <script src="main.js" defer></script>
+    <script src="main.js" type="module" defer></script>
 </head>
 <body>
     <header>
@@ -31,40 +31,18 @@
     <main>
         <div class="search">
             <div class="find-recipe">
-                <input type="text" placeholder="Find a recipe">
+                <input id="search-input" type="text" placeholder="Find a recipe">
             </div>
             <div class="search-icon">
-                <img src="images/search.svg" alt="magnifying glass">
+                <button class="search-button">
+                    <img src="images/search.svg" alt="magnifying glass">
+                </button>
             </div>
         </div>
 
         <div class="border-line"></div>
 
-        <div class="recipe-card">
-            <img src="images/apple-crisp.jpg" alt="Apple crisp with ice cream">
-            <div class="right-info">
-                <p class="type">dessert</p>
-
-                <h2>APPLE CRISP</h2>
-
-                <div class="stars">
-                    <span
-                        class="rating"
-                        role="img"
-                        aria-label="Rating: 4 out of 5 stars"
-                    >
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star-empty">⭐</span>
-                        <span aria-hidden="true" class="icon-star-empty">☆</span>
-                    </span>
-                </div>
-
-                <div class="description">
-                    <p>This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
-                </div>
-            </div>
+        <div class="recipe-container">
         </div>
     </main>
 
