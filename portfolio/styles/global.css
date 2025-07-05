@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap');
+
+:root {
+--primary-color: #333;
+--text-color: #00ff00;
+--accent-color: #00ffff;
+--text-dark: #000;
+--text-light: #fff;
+--primary-font: 'Cascadia Mono', Courier, monospace;
+--secondary-font: Arial, Helvetica, sans-serif;
+}
+
+h1, h2{
+    font-family: var(--primary-font);
+    color: var(--text-color);
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
