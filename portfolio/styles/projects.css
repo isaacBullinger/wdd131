@@ -1,0 +1,38 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 64px;
+}
+
+.project-card {
+    background-color: #262626;
+    margin-bottom: 32px;
+    display: flex;
+    gap: 32px;
+    padding: 32px;
+}
+
+.see-more {
+  cursor: pointer;
+  font-weight: normal;
+  background-color: #262626;
+  padding: 0;
+  margin-left: 4px;
+}
+
+img {
+    width: 400px;
+}
+
+.project-view {
+  background-color: #262626;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 64px;
+}
+
+.project-view p {
+    margin-bottom: 32px;
+}

@@ -15,6 +15,10 @@ h1, h2{
     color: var(--text-color);
 }
 
+span, a, p {
+    font-family: var(--secondary-font);
+}
+
 body {
     background-color: var(--primary-color);
     color: var(--text-light);
