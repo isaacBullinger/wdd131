@@ -111,5 +111,48 @@ main {
 }
 
 @media (max-width: 480px) {
-    
+    main {
+        margin: 16px 8px;
+    }
+
+    .monitor {
+        box-sizing: border-box;
+        padding: 24px;
+        width: 100%;
+    }
+
+    .terminal-content {
+        width: auto;
+        height: 200px;
+        padding: 16px;
+    }
+
+    .cursor {
+        font-size: 1em;
+    }
+
+    .mount-top {
+        width: 60%;
+    }
+
+    .mount-bottom {
+        width: 60%;
+    }
+
+    .case {
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .case-content {
+        flex-direction: column;
+        margin: 16px;
+        gap: 16px;
+    }
+
+    .inset {
+        width: 100%;
+    }
 }
